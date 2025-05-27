@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏发布平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .server-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .server-table th,
+        .server-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        .server-table th {
+            background-color: #333;
+            font-weight: normal;
+        }
+
+        .server-table tr:hover {
+            background-color: #2a2a2a;
+        }
+
+        .download-link,
+        .homepage-link {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .download-link:hover,
+        .homepage-link:hover {
+            text-decoration: underline;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .page-btn {
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .page-btn.active {
+            background-color: #4CAF50;
+        }
+
+        .page-btn:hover:not(.active) {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>游戏发布平台</h1>
+            <p>每日更新最新游戏信息</p>
+        </div>
+
+        <table class="server-table">
+            <thead>
+                <tr>
+                    <th>服务器名称</th>
+                    <th>IP 地址</th>
+                    <th>下载地址</th>
+                    <th>网站主页</th>
+                    <th>备注</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 示例数据（可循环生成） -->
+                <tr>
+                    <td>项羽战区</td>
+                    <td>192.168.1.100:7000</td>
+                    <td><a href="#" class="download-link">立即下载</a></td>
+                    <td><a href="#" class="homepage-link">官网入口</a></td>
+                    <td>1.85复古版本，上线送麻痹戒指</td>
+                </tr>
+                <tr>
+                    <td>八角楼战区</td>
+                    <td>47.93.128.55:6666</td>
+                    <td><a href="#" class="download-link">高速下载</a></td>
+                    <td><a href="#" class="homepage-link">官方网站</a></td>
+                    <td>独家光柱版本，爆率提升10倍</td>
+                </tr>
+                <tr>
+                    <td>宝龙战区</td>
+                    <td>47.93.128.55:6666</td>
+                    <td><a href="#" class="download-link">高速下载</a></td>
+                    <td><a href="#" class="homepage-link">官方网站</a></td>
+                    <td>独家光柱版本，爆率提升10倍</td>
+                </tr>
+ <tr>
+                    <td>恒大战区</td>
+                    <td>47.93.128.55:6666</td>
+                    <td><a href="#" class="download-link">高速下载</a></td>
+                    <td><a href="#" class="homepage-link">官方网站</a></td>
+                    <td>独家光柱版本，爆率提升10倍</td>
+                </tr>
+ <tr>
+                    <td>河东战区</td>
+                    <td>47.93.128.55:6666</td>
+                    <td><a href="#" class="download-link">高速下载</a></td>
+                    <td><a href="#" class="homepage-link">官方网站</a></td>
+                    <td>独家光柱版本，爆率提升10倍</td>
+                </tr>
+ <tr>
+                    <td>河西战区</td>
+                    <td>47.93.128.55:6666</td>
+                    <td><a href="#" class="download-link">高速下载</a></td>
+                    <td><a href="#" class="homepage-link">官方网站</a></td>
+                    <td>独家光柱版本，爆率提升10倍</td>
+                </tr>
+ <tr>
+                    <td>城南战区</td>
+                    <td>47.93.128.55:6666</td>
+                    <td><a href="#" class="download-link">高速下载</a></td>
+                    <td><a href="#" class="homepage-link">官方网站</a></td>
+                    <td>独家光柱版本，爆率提升10倍</td>
+                </tr>
+ <tr>
+                    <td>城西战区</td>
+                    <td>47.93.128.55:6666</td>
+                    <td><a href="#" class="download-link">高速下载</a></td>
+                    <td><a href="#" class="homepage-link">官方网站</a></td>
+                    <td>独家光柱版本，爆率提升10倍</td>
+                </tr>
+ <tr>
+                    <td>城北战区</td>
+                    <td>47.93.128.55:6666</td>
+                    <td><a href="#" class="download-link">高速下载</a></td>
+                    <td><a href="#" class="homepage-link">官方网站</a></td>
+                    <td>独家光柱版本，爆率提升10倍</td>
+                </tr>
+ <tr>
+                    <td>永恒战区</td>
+                    <td>47.93.128.55:6666</td>
+                    <td><a href="#" class="download-link">高速下载</a></td>
+                    <td><a href="#" class="homepage-link">官方网站</a></td>
+                    <td>独家光柱版本，爆率提升10倍</td>
+                </tr>
+ <tr>
+                    <td>南大战区</td>
+                    <td>47.93.128.55:6666</td>
+                    <td><a href="#" class="download-link">高速下载</a></td>
+                    <td><a href="#" class="homepage-link">官方网站</a></td>
+                    <td>独家光柱版本，爆率提升10倍</td>
+                </tr>
+ <tr>
+                    <td>西楚战区</td>
+                    <td>47.93.128.55:6666</td>
+                    <td><a href="#" class="download-link">高速下载</a></td>
+                    <td><a href="#" class="homepage-link">官方网站</a></td>
+                    <td>独家光柱版本，爆率提升10倍</td>
+                </tr>
+                <!-- 重复以上tr标签生成30条数据 -->
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <button class="page-btn">上一页</button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">4</button>
+            <button class="page-btn">5</button>
+            <button class="page-btn">下一页</button>
+        </div>
+    </div>
+</body>
+</html>
